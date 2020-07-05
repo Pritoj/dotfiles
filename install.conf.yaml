@@ -1,23 +1,24 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - create:
   - ~/.aliases
 
 # Task warrior configuration
 - link:
-    # Aliases for taskwarrior
+  # Aliases for taskwarrior
     ~/.aliases/taskwarrior.sh: 
         path: ./taskwarrior/aliases.sh
-        relink: true
-        create: true
 
     ~/.task/hooks/:
         path: ./taskwarrior/hooks/*
-        relink: true
-        create: true
         glob: true
 
+    ~/.taskrc: ./taskwarrior/taskrc
+
 - link:
-    # Aliases for git
-    ~/.aliases/git.sh: 
-        path: ./git/aliases.sh
-        relink: true
-        create: true
+  # Aliases for git
+      ~/.aliases/git.sh: 
+          path: ./git/aliases.sh
