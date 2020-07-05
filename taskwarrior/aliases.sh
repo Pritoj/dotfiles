@@ -4,21 +4,6 @@
 # Add a task to the in list.. i.e. a task with the tag `in`
 alias in='echo "🤔 Adding task to in list";task add +in'
 
-# Add a task which I should be reminded about later on
-tickle () {
-  echo "You will be reminded ⏰"
-  deadline=$1
-  shift
-  in +tickle wait:$deadline $@
-}
-
-# ALias `tickle` to just tick because lazy
-alias tick=tickle
-
-# These should generally be really small yes or no tasks.
-# They wil help me think over a decision e.g. Should I make bread
-alias think='tickle +1d'
-
 # A command to help process tasks.
 process_task() {
   # If no id was supplied don't do anything
@@ -43,3 +28,15 @@ process_task() {
 alias tproc=process_task
 
 alias tin='echo "📨 In report"; task in'
+
+# Add a task which I should be reminded about later on
+tickle () {
+  echo "You will be reminded ⏰"
+  taskId=$1
+  deadline=$2
+  shift 2
+  tproc +tickle wait:$deadline $@
+}
+
+# ALias `tickle` to just tick because lazy
+alias tick=tickle
