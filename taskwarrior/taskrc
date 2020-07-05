@@ -34,3 +34,9 @@ include ~/.task/task.credentials
 
 context.before-leaving-home=+beforeLeavingHome
 context.at-work=+work
+
+# The in list.  
+report.in.description=In list. Shows list fo tasks that are yet to be processed
+report.in.columns=id,description
+report.in.labels=ID,Task
+report.in.filter=status:pending +in
