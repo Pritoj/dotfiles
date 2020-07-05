@@ -9,6 +9,12 @@
         relink: true
         create: true
 
+    ~/.task/hooks/:
+        path: ./taskwarrior/hooks/*
+        relink: true
+        create: true
+        glob: true
+
 - link:
     # Aliases for git
     ~/.aliases/git.sh: 
