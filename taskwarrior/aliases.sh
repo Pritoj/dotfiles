@@ -35,7 +35,7 @@ tickle () {
   taskId=$1
   deadline=$2
   shift 2
-  tproc +tickle wait:$deadline $@
+  tproc $taskId wait:$deadline $@
 }
 
 # ALias `tickle` to just tick because lazy
