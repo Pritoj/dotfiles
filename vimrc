@@ -45,5 +45,13 @@ set smarttab
 set shiftwidth=0
 set noswapfile                      " Don't use swapfile
 
+" Line numbering is relative taken from here https://jeffkreeftmeijer.com/vim-number/
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
 
 
