@@ -2,7 +2,7 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -27,9 +27,10 @@ set incsearch 				              " search as achars are entered
 set hlsearch 				                " highlight matches
 
 
-colorscheme codedark 			          " Set dark color scheme from https://github.com/tomasiser/vim-code-dark#installation
+" colorscheme codedark 			          " Set dark color scheme from https://github.com/tomasiser/vim-code-dark#installation
+colorscheme dracula
 
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'dracula'
 
 syntax on
 
