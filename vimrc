@@ -43,6 +43,7 @@ set tabstop=2
 set expandtab
 set smarttab
 set shiftwidth=0
+set noswapfile                      " Don't use swapfile
 
 
 
