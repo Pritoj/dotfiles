@@ -22,3 +22,6 @@
   # Aliases for git
       ~/.aliases/git.sh: 
           path: ./git/aliases.sh
+
+- link:
+    ~/.vim/vimrc:
