@@ -40,3 +40,7 @@ report.in.description=In list. Shows list fo tasks that are yet to be processed
 report.in.columns=id,description
 report.in.labels=ID,Task
 report.in.filter=status:pending +in
+
+# Filter for the next lisit to only show unblocked tasks
+report.next.filter=status:pending +UNBLOCKED
+report.next.sort=status-,start-,priority-,project+,due+
