@@ -50,3 +50,9 @@ report.delegated.description=List of tasks that have been delegated
 report.delegated.columns=id,description,due,status
 report.delegated.labels=ID,Task,Followup on,Status
 report.delegated.filter=+WAITING +delegated
+
+# A context that removes all work related tasks
+context.personal=-work
+
+# A context that only shows job related stuff
+context.work=+work
