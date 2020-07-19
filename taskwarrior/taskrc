@@ -42,7 +42,7 @@ report.in.labels=ID,Task
 report.in.filter=status:pending +in
 
 # Filter for the next lisit to only show unblocked tasks
-report.next.filter=status:pending +UNBLOCKED
+report.next.filter=status:pending +UNBLOCKED -in # We remove the in task since they need to be processed
 report.next.sort=status-,start-,priority-,project+,due+
 
 # Filter out all tasks that were delegated and need to be followed up on
