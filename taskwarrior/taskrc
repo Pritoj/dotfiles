@@ -42,7 +42,7 @@ report.in.labels=ID,Task
 report.in.filter=status:pending +in
 
 # Filter for the next lisit to only show unblocked tasks
-report.next.filter=status:pending +UNBLOCKED -in # We remove the in task since they need to be processed
+report.next.filter=status:pending +UNBLOCKED -in -someday # We remove the in task since they need to be processed
 report.next.sort=status-,start-,priority-,project+,due+
 
 # Filter out all tasks that were delegated and need to be followed up on
@@ -50,6 +50,12 @@ report.delegated.description=List of tasks that have been delegated
 report.delegated.columns=id,description,due,status
 report.delegated.labels=ID,Task,Followup on,Status
 report.delegated.filter=+WAITING +delegated
+
+# Ideas for some day that can be implemented
+report.someday.description=Ideas to be implemented some day
+report.someday.columns=id,description,status
+report.someday.labels=ID,Task,Status
+report.someday.filter=+someday
 
 # A context that removes all work related tasks
 context.personal=-work
