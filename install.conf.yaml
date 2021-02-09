@@ -6,6 +6,11 @@
 - create:
   - ~/.aliases
 
+# zsh config
+- link:
+    ~/.zshrc:
+      path: ./zshrc
+
 # Task warrior configuration
 - link:
   # Aliases for taskwarrior
