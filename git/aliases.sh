@@ -1,7 +1,8 @@
 # GIT ALIASES TO SAVE MY LIFE
 alias gpush='echo "Pushing to $(git rev-parse --abbrev-ref HEAD) 🔥"; git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpull='echo "Pulling branch $(git rev-parse --abbrev-ref HEAD) 🔥"; git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpushf='echo "Forcibly pushing to $(git rev-parse --abbrev-ref HEAD) 😈"; git push origin $(git rev-parse --abbrev-ref HEAD) -f'
-alias go='echo "Checkout 👽"; git checkout'
+alias gco='echo "Checkout 👽"; git checkout'
 
 # Commiting
 alias gmend='echo "Amending yo shiz 🤷";git commit --amend'
