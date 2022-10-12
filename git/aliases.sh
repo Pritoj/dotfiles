@@ -15,6 +15,7 @@ alias gtashpop='echo "☄️ Poppin that stash"; git stash pop'
 
 # Status
 alias gstatus='echo "👀 Here is a status of this repo";git status'
+alias gtat=gstatus
 # No emoji or echo here since they open a new prompt
 alias glog='git log'
 alias glogol='glog --oneline'

@@ -30,3 +30,15 @@
 
 - link:
     ~/.vim/vimrc:
+
+# TMUX configuration
+- link:
+    ~/.tmux.conf:
+      path: ./tmux/.tmux.conf
+- link:
+    ~/.config/tmux:
+      path: ./tmux/config
+
+# NeoVim and NvChad
+    ~/.config/nvim/lua/custom:
+      path: ./nvim/lua/custom
