@@ -3,7 +3,7 @@ local M = {}
 local userPlugins = require("custom.plugins")
 
 M.ui = {
-	theme = "gruvbox",
+	theme = "aquarium",
 }
 
 M.plugins = {
@@ -18,7 +18,7 @@ M.plugins = {
 			setup_lspconf = "custom.plugins.lspconfig",
 		},
 	},
-  -- It sucks
+	-- It sucks
 	remove = {
 		"NvChad/nvterm",
 	},
