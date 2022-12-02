@@ -7,6 +7,7 @@ alias gco='echo "Checkout 👽"; git checkout'
 # Commiting
 alias gmend='echo "Amending yo shiz 🤷";git commit --amend'
 alias gomit='echo "Lets commit this shiz 🚀";git commit'
+alias gixc='echo "Fixing this shiz for you"; git add .; gmend --no-edit;'
 
 # Stashing
 alias rebtash='echo "🤖 Rebasing on the provided branch and autostashing";git rebase --autostash'
