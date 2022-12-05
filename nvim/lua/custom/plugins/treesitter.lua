@@ -4,10 +4,8 @@ M.overrides = {
   -- TODO: FIgure out if I need to remove some
 	ensure_installed = {
 		"bash",
-		"c",
 		"css",
 		"dockerfile",
-		"elixir",
 		"go",
 		"html",
 		"java",
@@ -20,7 +18,6 @@ M.overrides = {
 		"regex",
 		"ruby",
 		"rust",
-		"scala",
 		"scss",
 		"toml",
 		"tsx",

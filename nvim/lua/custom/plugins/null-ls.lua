@@ -5,7 +5,7 @@ local sources = {
 
 	-- Typescript, Javascript, HTML, CSS
 	b.formatting.prettierd.with({
-		filetypes = { "html", "markdown", "css", "typescript", "javascript", "typescriptreact" },
+		filetypes = { "html", "markdown", "css", "typescript", "javascript", "typescriptreact", "json" },
 	}),
 	b.diagnostics.eslint_d,
 	b.code_actions.eslint_d,
@@ -33,8 +33,8 @@ M.setup = function()
 
 		-- format on save
 		on_attach = function(client)
-			if client.resolved_capabilities.document_formatting then
-				vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+			if client.server_capabilities.document_formatting then
+				vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.format()")
 			end
 		end,
 	})
