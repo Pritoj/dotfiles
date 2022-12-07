@@ -13,12 +13,9 @@ local servers = {
 	"cssls",
 	"dockerls",
 	"jsonls",
-	"java_language_server",
-	"kotlin_language_server",
 	"pyright",
 	"tsserver",
 	"vimls",
-	"typescript_language_server",
 }
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
@@ -26,16 +23,6 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	})
 end
-
--- TypeScript
-lspconfig.tsserver.setup({
-	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-	cmd = { "typescript-language-server", "--stdio" },
-	on_attach = function(client)
-		client.server_capabilities.documentFormattingProvider = false
-		client.server_capabilities.documentRangeFormattingProvider = false
-	end,
-})
 
 -- Show diagnostic messages on hover https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization#show-line-diagnostics-automatically-in-hover-window
 vim.o.updatetime = 100

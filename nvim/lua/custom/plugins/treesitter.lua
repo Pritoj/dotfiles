@@ -1,7 +1,7 @@
 local M = {}
 
 M.overrides = {
-  -- TODO: FIgure out if I need to remove some
+  -- TODO: Figure out if I need to remove some
 	ensure_installed = {
 		"bash",
 		"css",
