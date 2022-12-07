@@ -5,7 +5,7 @@ local sources = {
 
 	-- Typescript, Javascript, HTML, CSS
 	b.formatting.prettierd.with({
-		filetypes = { "html", "markdown", "css", "typescript", "javascript", "typescriptreact", "json" },
+		filetypes = { "html", "markdown", "css", "typescript", "javascript", "typescriptreact", "json", "typescript.tsx" },
 	}),
 	b.diagnostics.eslint_d,
 	b.code_actions.eslint_d,
@@ -22,6 +22,9 @@ local sources = {
 	-- Shell
 	b.formatting.shfmt,
 	b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
+
+  -- Git actions like stage etc
+  b.code_actions.gitsigns
 }
 
 local M = {}
