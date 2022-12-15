@@ -6,6 +6,9 @@
 - create:
   - ~/.aliases
 
+# Alacritty
+- link:
+    ~/.config/alacritty/alacritty.yml: ./alacritty.yml
 # zsh config
 - link:
     ~/.zshrc:
