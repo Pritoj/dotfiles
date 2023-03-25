@@ -106,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export TERM=xterm-256color
 
+export EDITOR=nvim
+
 source ~/.aliases/git.sh
 source ~/.aliases/taskwarrior.sh
 
