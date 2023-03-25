@@ -60,6 +60,9 @@ M.mason = {
 
 		--Kotlin
 		"kotlin-language-server",
+
+		--Shell
+		"shellcheck",
 	},
 }
 
