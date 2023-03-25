@@ -75,7 +75,7 @@ M.nvimtree = {
 		-- Don't hide them dot files
 		dotfiles = false,
 		-- Don't show node_modules
-		custom = { "node_modules" },
+		custom = { "node_modules", ".git" },
 	},
 
 	renderer = {
