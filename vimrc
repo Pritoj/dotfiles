@@ -15,7 +15,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Quramy/tsuquyomi'
 Plug 'rust-lang/rust.vim'
-Plug 'blindFS/vim-taskwarrior'
 
 call plug#end()
 
