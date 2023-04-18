@@ -104,6 +104,7 @@ local plugins = {
 			require("trouble").setup({})
 		end,
 	},
+
 	{
 		"simrat39/rust-tools.nvim",
 		lazy = false,
@@ -111,6 +112,24 @@ local plugins = {
 			require("custom.configs.rust-tools")
 		end,
 	},
+
+	-- https://github.com/folke/noice.nvim
+	{
+		"folke/noice.nvim",
+		lazy = false,
+		config = function()
+			require("custom.configs.noice")
+		end,
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
+	},
+
 	-- To make a plugin not be loaded
 	-- {
 	--   "NvChad/nvim-colorizer.lua",
