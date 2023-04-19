@@ -107,3 +107,5 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
 
 --
 -- lspconfig.pyright.setup { blabla}
+
+require("custom.configs.noice")
