@@ -51,6 +51,7 @@ M.mason = {
 		"json-lsp",
 		"typescript-language-server",
 		"prettierd",
+		"yaml-language-server",
 
 		-- Smithy
 		"smithy-language-server",

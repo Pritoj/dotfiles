@@ -2,6 +2,7 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
+local schemaStore = require("schemastore")
 
 -- Folding based on lsp - provided to UFO
 capabilities.textDocument.foldingRange = {
@@ -48,6 +49,27 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	})
 end
+
+lspconfig.jsonls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		json = {
+			schemas = schemaStore.json.schemas(),
+			validate = { enable = true },
+		},
+	},
+})
+
+lspconfig.yamlls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		yaml = {
+			schemas = schemaStore.yaml.schemas(),
+		},
+	},
+})
 
 -- Function to check if a floating dialog exists and if not
 -- then check for diagnostics under the cursor

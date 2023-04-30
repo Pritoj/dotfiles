@@ -72,6 +72,9 @@ local plugins = {
 			require("custom.configs.ufo")
 		end,
 	},
+	{
+		"b0o/schemastore.nvim",
+	},
 
 	-- To make a plugin not be loaded
 	-- {
