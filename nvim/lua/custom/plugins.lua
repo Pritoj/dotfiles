@@ -73,6 +73,9 @@ local plugins = {
 			require("custom.configs.ufo")
 		end,
 	},
+	{
+		"b0o/schemastore.nvim",
+	},
 
 	-- Schema validation for json and some yaml files
 	{
