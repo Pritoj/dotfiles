@@ -61,6 +61,7 @@ local plugins = {
 			})
 		end,
 	},
+
 	-- Provides nice folding
 	{
 		"kevinhwang91/nvim-ufo",
@@ -72,8 +73,25 @@ local plugins = {
 			require("custom.configs.ufo")
 		end,
 	},
+
+	-- Schema validation for json and some yaml files
 	{
 		"b0o/schemastore.nvim",
+	},
+
+	{
+		"folke/todo-comments.nvim",
+		lazy = false,
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		config = function()
+			require("todo-comments").setup({
+				highlight = {
+					multiline = false,
+				},
+			})
+		end,
 	},
 
 	-- To make a plugin not be loaded
