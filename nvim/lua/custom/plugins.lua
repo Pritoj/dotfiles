@@ -94,6 +94,17 @@ local plugins = {
 		end,
 	},
 
+	{
+		"folke/trouble.nvim",
+		lazy = false,
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+		config = function()
+			require("trouble").setup({})
+		end,
+	},
+
 	-- To make a plugin not be loaded
 	-- {
 	--   "NvChad/nvim-colorizer.lua",
