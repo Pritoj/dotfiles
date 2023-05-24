@@ -19,6 +19,8 @@ local servers = {
 	"jsonls",
 	"vimls",
 	"pyright",
+	-- Will be setup by rust-tools
+	-- "rust_analyzer",
 }
 
 vim.cmd([[autocmd! ColorScheme * highlight NormalFloat guibg=#1f2335]])
