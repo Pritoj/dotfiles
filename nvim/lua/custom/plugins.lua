@@ -114,6 +114,9 @@ local plugins = {
 		config = function()
 			require("custom.configs.rust-tools")
 		end,
+		dependencies = {
+			"neovim/nvim-lspconfig",
+		},
 	},
 
 	-- https://github.com/folke/noice.nvim
