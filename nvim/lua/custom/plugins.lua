@@ -15,6 +15,14 @@ local plugins = {
 					require("custom.configs.null-ls")
 				end,
 			},
+			{
+				"SmiteshP/nvim-navbuddy",
+				dependencies = {
+					"SmiteshP/nvim-navic",
+					"MunifTanjim/nui.nvim",
+				},
+				opts = { lsp = { auto_attach = true } },
+			},
 		},
 		config = function()
 			require("plugins.configs.lspconfig")
@@ -134,6 +142,20 @@ local plugins = {
 			--   If not available, we use `mini` as the fallback
 			"rcarriga/nvim-notify",
 		},
+	},
+
+	{
+		"utilyre/barbecue.nvim",
+		name = "barbecue",
+		version = "*",
+		lazy = false,
+		dependencies = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+		config = function()
+			require("barbecue").setup()
+		end,
 	},
 
 	-- To make a plugin not be loaded
