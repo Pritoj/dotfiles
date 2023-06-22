@@ -29,6 +29,8 @@ M.treesitter = {
 
 		"markdown",
 		"markdown_inline",
+
+		"smithy",
 	},
 	indent = {
 		enable = true,

@@ -16,9 +16,9 @@ local servers = {
 	"cssls",
 	"tsserver",
 	"dockerls",
-	"jsonls",
 	"vimls",
 	"pyright",
+	"smithy_ls",
 	-- Will be setup by rust-tools
 	-- "rust_analyzer",
 }
