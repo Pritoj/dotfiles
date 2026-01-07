@@ -40,3 +40,5 @@ tickle () {
 
 # ALias `tickle` to just tick because lazy
 alias tick=tickle
+alias twerk="task +work"
+alias tchow="task chow"
